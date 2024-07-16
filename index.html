@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
+    <link rel="stylesheet" href="css/lightgallery.css">
+</head>
+<body>
+
+    <header>
+        <div class="topbar container">
+
+            <img class="topbar_img" src="./img/zaffa academy 2 1.png" alt="zaffa academy 2 1.png">
+
+            <div class="topbar_info">
+                <div class="topbar_info-tel">
+                    <i class="fa-regular fa-phone-flip"></i>
+                    <span>
+                        <p>Вызов:</p>
+                        <a href="tel:+998 99 809 38 78">+998 99 809 38 78</a>
+                    </span>
+                </div>
+    
+                <div class="topbar_info-hour">
+                    <i class="fa-light fa-clock"></i>
+                    <span>
+                        <p>График работы:</p>
+                        <p>с 8:00 до 21:00</p>
+                    </span>
+                </div>
+    
+                <div class="topbar_info-location">
+                    <i class="fa-regular fa-location-dot"></i>
+                    <span>
+                        <p>Адрес:</p>
+                        <p>Ташкентская область, город Янгиёл, рядом с 
+                            новым мостом, напротив «TEXNO CITY».</p>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+
+        <nav class="zaffa container">
+            <div class="zaffa_links">
+                <!-- Navbar links here -->
+                <a href="index.html" class="zaffa_links_link">Главная</a>
+                <a href="pages/onas.html" class="zaffa_links_link">О нас</a>
+                <a href="./pages/kursi.html" class="zaffa_links_link">Курсы</a>
+                <a href="./pages/conta.html" class="zaffa_links_link">Контакты</a>
+                <a href="./pages/tect.html" class="zaffa_links_link">Тести</a>
+                <a href="./pages/conta.html" class="zaffa_links_link">Контаты</a>
+            </div>
+            <div class="zaffa_langu">
+                <!-- Language switcher here -->
+                <p>РУС</p><i class="zaffa_langu-icon"><i class="fa-regular fa-globe"></i></i>
+                <button>Войти</button>
+            </div>
+            <div class="zaffa_menu" onclick="toggleNav()">
+                <p>Menu</p><i class="zaffa_menu-icon"><i class="fa-regular fa-bars"></i></i>
+            </div>
+            <div class="zaffa_nav" id="navMenu">
+                <a href="index.html" class="zaffa_nav_link">Главная</a>
+                <a href="pages/onas.html" class="zaffa_nav_link">О нас</a>
+                <a href="./pages/kursi.html" class="zaffa_nav_link">Курсы</a>
+                <a href="./pages/conta.html" class="zaffa_nav_link">Контакты</a>
+                <a href="./pages/tect.html" class="zaffa_nav_link">Тести</a>
+                <a href="./pages/conta.html" class="zaffa_nav_link">Контаты</a>
+
+                <!-- Language switcher here -->
+                <span>
+                    <p>РУС</p><i class="zaffa_nav-icon"><i class="fa-regular fa-globe"></i></i>
+                <button>Войти</button>
+                </span>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="container">
+        <section class="sec1">
+            <div class="sec1_d">
+                <img src="/img/Rectangle 912.png" alt="" class="sec1_d-img">
+                <img src="img/Group 315.png" alt="" class="sec1_d-img1">
+                <img src="img/Rectangle 913.png" alt="" class="sec1_d-img2">
+                <img src="img/Rectangle 916.png" alt="" class="sec1_d-img3">
+                <img src="img/Rectangle 914.png" alt="" class="sec1_d-img4">
+                <img src="img/Rectangle 915.png" alt="" class="sec1_d-img5"> 
+
+                <div class="sec1_d-info">
+                    <img src="img/Mask group (1).png" alt=""> 
+                    <span>
+                        <p>ПЕРВОКЛАССНЫЕ КУРСЫ От ПОДГОТОВЛЕННЫХ</p>
+                        <p>ПРОФЕССИОНАЛОВ</p>
+                        <p>НАЙДИТЕ СВОЙ ЛЮБИМЫЙ КУРС ЗДЕСЬ</p>
+                    </span>
+                    <span>
+                        <button>Связаться с нами</button>
+                        <button>Посмотреть курсы</button>  
+                    </span>
+                    <p class="sec1_d-info-text">Наши соц.сети</p>  
+                    <span class="sec1_d-info-inter">
+                        <a href="https://www.youtube.com/@ZAFFA_ACADEMY" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://t.me/ZAFFA_ACADEMY" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="https://www.instagram.com/zaffa.academy/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <span class="bbb">
+            <h1>Наши Курсы</h1>
+        </span>
+        <!-- Slider main container -->
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="course-card">
+                <img src="img/Group 26.png" alt="Frontend">
+                <h3>Курс «Frontend»</h3>
+                <div class="course-info">
+                    <span class="course-info-text">
+                        <p><i class="fa-regular fa-calendar-days"></i> 6 месяцев</p>
+                    </span>
+                      <span class="course-info-text1">
+                        <p><i class="fa-solid fa-users-line"></i> 40+ участников</p>
+                      </span>
+                </div>
+                <a href="./pages/frontend.html"><button class="course-card-btn">Подробнее</button></a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="course-card">
+                <img src="img/Group 29.png" alt="Backend">
+                <h3>Курс «Backend»</h3>
+                <div class="course-info">
+                  <span class="course-info-text">                    
+                    <p><i class="fa-regular fa-calendar-days"></i> 6 месяцев</p>
+                </span>
+                  <span class="course-info-text1">
+                    <p><i class="fa-solid fa-users-line"></i> 40+ участников</p>
+                  </span>
+                </div>
+                <a href="./pages/back.html"><button class="course-card-btn">Подробнее</button></a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="course-card">
+                <img src="img/Group 30.png" alt="Web design">
+                <h3>Курс «Web design»</h3>
+                <div class="course-info">
+                    <span class="course-info-text"> 
+                        <p><i class="fa-regular fa-calendar-days"></i> 6 месяцев</p>
+                    </span>
+                      <span class="course-info-text1">
+                        <p><i class="fa-solid fa-users-line"></i> 40+ участников</p>
+                      </span>
+                </div>
+                <a href="./pages/web.html"><button class="course-card-btn">Подробнее</button></a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="course-card">
+                <img src="img/Group 321 (1).png" alt="Компьютер">
+                <h3>Курс «Компьютер»</h3>
+                <div class="course-info">
+                    <span class="course-info-text">
+                        <p><i class="fa-regular fa-calendar-days"></i> 6 месяцев</p>
+                    </span>
+                      <span class="course-info-text1">
+                         <p><i class="fa-solid fa-users-line"></i> 40+ участников</p>
+                      </span>
+                </div>
+                <a href="./pages/komp.html"><button class="course-card-btn">Подробнее</button></a>
+              </div>
+            </div>
+          </div>
+          <!-- If you want pagination (bullets) -->
+          <div class="swiper-pagination"></div>
+          <!-- If you want navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+
+
+        <section class="hobbi container">
+            <div class="hobbi_content">
+                <div class="hobbi_content-imges">
+                    <img src="img/skilss (1).png" alt="">
+                    <img src="img/Saly-10.png" alt="">
+                </div>
+                <div class="hobbi_content-info">
+                    <p>Немного о компании</p>
+                    <h3>ZAFFA ACADEMY</h3>
+                    <p>
+                        Команда 'ZAFFA ACADEMY' создали уроки, 
+                        чтобы помочь вам уверенее работать 
+                        с технологиями и открыть путь к новым возможностям
+                    </p>
+                    <p>
+                        Это отличный способ развить многие передаваемые <br>
+                        навыки и расширить вашу карьеру
+                    </p>
+                    <div class="hobbi_content-info-hobby">
+                        <p>My Hobby</p>
+                        <div class="hobbi_content-info-hobby-a">
+                            <p><i class="fa-light fa-clapperboard"></i> Movie</p>
+                            <p><i class="fa-light fa-train-subway-tunnel"></i> Travel</p>
+                            <p><i class="fa-regular fa-camera"></i> Photo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="nas container">
+            <div class="nas_content">
+                <p>Почему выбирают нас</p>
+                <div class="nas_content-blocks">
+                    <div class="nas_content-blocks-block">
+                        <img src="img/Frame 7.png" alt="">
+                        <h4>Полноценная профессия</h4>
+                        <p>Один курс - одна полноценная профессия. 
+                            Вы изучаете основные инструменты, 
+                            которыми пользуются современные 
+                            специалисты</p>
+                    </div>
+                    <div class="nas_content-blocks-block">
+                        <img src="img/Frame 7 (1).png" alt="">
+                        <h4>Полноценная профессия</h4>
+                        <p>Каждый кабинет оснащен всей  необходимой техникой для комфортного обучения. Вам достаточно заниматься на уроках и выполнять домашние задания в нашем коворкинге.</p>
+                    </div>
+                    <div class="nas_content-blocks-block">
+                        <img src="img/Frame 7 (2).png" alt="">
+                        <h4>Полноценная профессия</h4>
+                        <p>Новые наборы мы запускаем стабильно, без перебоев. Вам не нужно месяцами ждать, когда запустится курс, который вам интересен.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="kurs container">
+            <div class="kurs__content">
+                <h3>
+                    Популярные курсы
+                </h3>
+                <div class="kurs__content-blocks">
+                    <div class="kurs__content-blocks-block">
+                    <img src="img/Rectangle 21.png" alt="">
+                    <h4>Курс «Frontend»</h4>
+                    <span class="kurs__content-blocks-block-text1">
+                        <p class="kurs__content-blocks-block-text1-text"><i class="fa-regular fa-calendar-days"></i> 6 - месецев</p>
+                        <p class="kurs__content-blocks-block-text1-text1"><i class="fa-solid fa-users-line"></i> 40+ учеников</p>
+                    </span>
+                    <a href="./pages/frontend.html"><button>Подробнee</button></a>
+                    </div>
+                    <div class="kurs__content-blocks-block">
+                        <img src="img/Rectangle 22.png" alt="">
+                        <h4>Курс  «Web design»</h4>
+                        <span class="kurs__content-blocks-block-text1">
+                            <p class="kurs__content-blocks-block-text1-text"><i class="fa-regular fa-calendar-days"></i> 6 - месецев</p>
+                            <p class="kurs__content-blocks-block-text1-text1"><i class="fa-solid fa-users-line"></i> 40+ учеников</p>
+                        </span>
+                        <a href="./pages/web.html"><button>Подробнee</button></a>
+                    </div>
+                    <div class="kurs__content-blocks-block">
+                        <img src="img/Rectangle 23.png" alt="">
+                        <h4>Курс «Backend»</h4>
+                        <span class="kurs__content-blocks-block-text1">
+                            <p class="kurs__content-blocks-block-text1-text"><i class="fa-regular fa-calendar-days"></i> 6 - месецев</p>
+                            <p class="kurs__content-blocks-block-text1-text1"><i class="fa-solid fa-users-line"></i> 40+ учеников</p>
+                        </span>
+                        <a href="./pages/back.html"><button>Подробнee</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="news-section container">
+            <h3>Новости</h3>
+            <h1>Новости нашей академии</h1>
+            <div class="tabs">
+                <button class="tablink" onclick="openTab(event, 'latestNews')">Последние новости</button>
+                <button class="tablink" onclick="openTab(event, 'courseNews')">Новости по курсов</button>
+                <button class="tablink" onclick="openTab(event, 'studentNews')">Новости по учеников</button>
+            </div>
+            <div id="latestNews" class="tabcontent">
+                <div class="news-cards">
+                    <div class="id">
+                        <div class="news-card">
+                            <img src="img/eng.png" alt="News Image">
+                        </div>
+                    </div>
+                   <div class="class">
+                    <div class="news-card1">
+                        <img src="img/bugalteria.png" alt="News Image">
+                    </div>
+                    <div class="news-card1">
+                        <img src="img/backend.png" alt="News Image">
+                    </div>
+                    <div class="news-card1">
+                        <img src="img/foronend.png" alt="News Image">
+                    </div>
+                    <div class="news-card1">
+                        <img src="img/web-dising.png" alt="News Image">
+                    </div>
+                   </div>
+                </div>
+            </div>
+            <div id="courseNews" class="tabcontent">
+                <!-- Course news content -->
+            </div>
+            <div id="studentNews" class="tabcontent">
+                <!-- Student news content -->
+            </div>
+            <button class="view-all-btn">Посмотреть все</button>
+        </div>
+
+        <section class="stati container">
+            <div class="stati__content">
+                <h3>НАШИ СТАТЬИ</h3>
+                <div class="stati__content-blocks">
+                    <div class="stati__content-blocks-block">
+                        <img src="img/stantimg2.png" alt="">
+                        <p>Для чего нужно 
+                            веб-программирование</p>
+                    </div>
+                    <div class="stati__content-blocks-block">
+                        <img src="img/stantimg1.png" alt="">
+                        <p>Что такое 
+                            бэкенд-разработка?</p>
+                    </div>
+                    <div class="stati__content-blocks-block">
+                        <img src="img/statimg.png" alt="">
+                        <p>Кто такой 
+                            веб-дизайнер?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="gallery-section">
+            <h1>Галерея нашей академии</h1>
+            <div class="gallery-cards" id="gallery">
+                <div class="gallery-card">
+                    <a href="img/image 18.png">
+                        <img src="img/image 18.png" alt="Hotels" style="margin-left: 2px;">
+                    </a>
+                    <div class="overlay">Hotels</div>
+                </div>
+                <div class="gallery-card">
+                    <a href="img/image 18 (1).png">
+                        <img src="img/image 18 (1).png" alt="Apartments" style="margin-left: 2px;">
+                    </a>
+                    <div class="overlay">Apartments</div>
+                </div>
+                <div class="gallery-card">
+                    <a href="img/image 18 (2).png">
+                        <img src="img/image 18 (2).png" alt="Resorts" style="margin-left: 2px;">
+                    </a>
+                    <div class="overlay">Resorts</div>
+                </div>
+                <div class="gallery-card">
+                    <a href="img/image 18 (1).png">
+                        <img src="img/image 18 (3).png" alt="Villas" style="margin-left: 2px;">
+                    </a>
+                    <div class="overlay">Villas</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="avto">
+            <img src="img/cta-img-bg 1.png" alt="" class="blur">
+            <span class="mm">
+                <p>Если вы заинтересованы в профессиональном изучении правил дорожного движения и вождения, мы приглашаем вас на сайт ZAFFA AVTOCLASS</p>
+            <a target="_blank" href="https://www.instagram.com/zaffa.avtoclass"><button>посмотреть сайт</button></a>
+            </span>
+        </div>
+
+    <div class="contact-section container">
+        <div class="contact-form">
+            <h2>Наши контакты</h2>
+            <p>Если у вас есть какие-либо вопросы о курсах или другие вопросы, вы можете связаться с нами, заполнив форму ниже</p>
+            <form>
+                <div class="input-container">
+                    <input type="text" id="input" required="">
+                    <label for="input" class="label">Ф.И.О</label>
+                    <div class="underline"></div>
+                  </div>
+                  <div class="input-container">
+                    <input type="text" id="input" required="">
+                    <label for="input" class="label"> Ел.Почта</label>
+                    <div class="underline"></div>
+                  </div>
+                  <div class="input-container">
+                    <input type="text" id="input" required="">
+                    <label for="input" class="label">Сообщение</label>
+                    <div class="underline"></div>
+                  </div>
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+        <div class="contact-bg container">
+        <div class="contact-info container">
+            <h3><i class="fa-regular fa-circle-info"></i>инфо</h3>
+            <p><i class="fas fa-phone"></i> +998 (99) 809 38 78 <br> +998 (99) 800 38 78</p>
+            <p><i class="fas fa-envelope"></i> zaffa.academy@mail.ru</p>
+            <p><i class="fas fa-map-marker-alt"></i> г. Ташкент, рядом с новым мостом, напротив "ТЕХНО СИТИ" здание "ZAFFA EDU"</p>
+            <p><i class="fas fa-clock"></i> 08:30 - 20:30</p>
+        </div>
+    </div>
+    </div>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <img src="img/Mask group (2).png" alt="ZAFFA Academy">
+                <div class="socials">
+                    <a target="_blank" href="https://www.youtube.com/@ZAFFA_ACADEMY"><i class="fab fa-youtube"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/zaffa.academy/"><i class="fab fa-instagram"></i></a>
+                    <a target="_blank" href="https://t.me/ZAFFA_ACADEMY"><i class="fab fa-telegram"></i></a>
+                </div>
+                <p>@zaffaacademy.uz</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Sitemap</h3>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="./pages/onas.html">О нас</a></li>
+                    <li><a href="./pages/kursi.html">Курсы</a></li>
+                    <li><a href="./pages/conta.html">Контакты</a></li>
+                    <li><a href="./pages/tect.html">Тести</a></li>
+                    <li><a href="./pages/conta.html">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer-section links">
+                <h3>Курсы</h3>
+                <ul>
+                    <li><a href="#">Веб дизайн</a></li>
+                    <li><a href="#">Фронтенд</a></li>
+                    <li><a href="#">Бэкенд</a></li>
+                    <li><a href="#">Бухгалтерия</a></li>
+                    <li><a href="#">Компьютер</a></li>
+                    <li><a href="#">Англ язык</a></li>
+                    <li><a href="#">Русский язык</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Head Office</h3>
+                <p>Янгиюль, рядом с новым мостом, напротив "ТЕХНО СИТИ" здание "ZAFFA EDU"</p>
+                <p><i class="fas fa-phone"></i> +998 (99) 809 38 78</p>
+                <p><i class="fas fa-phone"></i> +998 (99) 800 38 78</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2020 UI Medico AI. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="libs/lightgallery.js"></script>
+    <script src="libs/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

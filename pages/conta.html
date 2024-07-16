@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/conta.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css">
+</head>
+<body>
+    
+    <header>
+        <div class="topbar container">
+
+            <img class="topbar_img" src="../img/zaffa academy 2 1.png" alt="zaffa academy 2 1.png">
+
+            <div class="topbar_info">
+                <div class="topbar_info-tel">
+                    <i class="fa-regular fa-phone-flip"></i>
+                    <span>
+                        <p>Вызов:</p>
+                        <a href="tel:+998 99 809 38 78">+998 99 809 38 78</a>
+                    </span>
+                </div>
+    
+                <div class="topbar_info-hour">
+                    <i class="fa-light fa-clock"></i>
+                    <span>
+                        <p>График работы:</p>
+                        <p>с 8:00 до 21:00</p>
+                    </span>
+                </div>
+    
+                <div class="topbar_info-location">
+                    <i class="fa-regular fa-location-dot"></i>
+                    <span>
+                        <p>Адрес:</p>
+                        <p>Ташкентская область, город Янгиёл, рядом с 
+                            новым мостом, напротив «TEXNO CITY».</p>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+
+        <nav class="zaffa container">
+            <div class="zaffa_links">
+                <!-- Navbar links here -->
+                <a href="../index.html" class="zaffa_links_link">Главная</a>
+                <a href="pages/onas.html" class="zaffa_links_link">О нас</a>
+                <a href="kursi.html" class="zaffa_links_link">Курсы</a>
+                <a href="conta.html" class="zaffa_links_link">Контакты</a>
+                <a href="tect.html" class="zaffa_links_link">Тести</a>
+                <a href="conta.html" class="zaffa_links_link">Контаты</a>
+            </div>
+            <div class="zaffa_langu">
+                <!-- Language switcher here -->
+                <p>РУС</p><i class="zaffa_langu-icon"><i class="fa-regular fa-globe"></i></i>
+                <button>Войти</button>
+            </div>
+            <div class="zaffa_menu" onclick="toggleNav()">
+                <p>Menu</p><i class="zaffa_menu-icon"><i class="fa-regular fa-bars"></i></i>
+            </div>
+            <div class="zaffa_nav" id="navMenu">
+                <a href="../index.html" class="zaffa_nav_link">Главная</a>
+                <a href="pages/onas.html" class="zaffa_nav_link">О нас</a>
+                <a href="kursi.html" class="zaffa_nav_link">Курсы</a>
+                <a href="conta.html" class="zaffa_nav_link">Контакты</a>
+                <a href="tect.html" class="zaffa_nav_link">Тести</a>
+                <a href="conta.html" class="zaffa_nav_link">Контаты</a>
+
+                <!-- Language switcher here -->
+                <span>
+                    <p>РУС</p><i class="zaffa_nav-icon"><i class="fa-regular fa-globe"></i></i>
+                <button>Войти</button>
+                </span>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="loc container">
+            <div class="loc__content">
+                <h2>Контакты</h2>
+                <div class="loc__content-blocks">
+                    <div class="loc__content-blocks-blovk">
+                        <span><i class="fa-solid fa-location-dot"></i></span>
+                        <p><span>Адрес:</span> г. Янгиюль, рядом с новым <br>
+                            мостом, напротив "TEXNO CITY" <br>
+                            здание "ZAFFA ACADEMY”<br></p>
+                    </div>
+                    <div class="loc__content-blocks-blovk">
+                        <span><i class="fa-solid fa-envelope"></i></span>
+                        <p><span>Email:</span> zaffa.academy.uz</p>
+                    </div>
+                    <div class="loc__content-blocks-blovk">
+                        <span><i class="fa-sharp fa-regular fa-phone"></i></i></span>
+                        <p><span>Телефон:</span> +998 (99) 809 38 78 <br>
+                            +998 (99) 800 38 78</p>
+                    </div>
+                    <div class="loc__content-blocks-blovk">
+                        <span><i class="fa-sharp fa-solid fa-clock"></i></span>
+                        <p><span>График:</span> 08:00 20:00 </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="contact-section container">
+            <div class="contact-form">
+                <h2>Наши контакты</h2>
+                <p>Если у вас есть какие-либо вопросы о курсах или другие вопросы, вы можете связаться с нами, заполнив форму ниже</p>
+                <form>
+                    <div class="input-container">
+                        <input type="text" id="input" required="">
+                        <label for="input" class="label">Ф.И.О</label>
+                        <div class="underline"></div>
+                      </div>
+                      <div class="input-container">
+                        <input type="text" id="input" required="">
+                        <label for="input" class="label"> Ел.Почта</label>
+                        <div class="underline"></div>
+                      </div>
+                      <div class="input-container">
+                        <input type="text" id="input" required="">
+                        <label for="input" class="label">Сообщение</label>
+                        <div class="underline"></div>
+                      </div>
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
+            <div class="contact-bg container">
+            <div class="contact-info container">
+                <h3><i class="fa-regular fa-circle-info"></i>инфо</h3>
+                <p><i class="fas fa-phone"></i> +998 (99) 809 38 78 <br> +998 (99) 800 38 78</p>
+                <p><i class="fas fa-envelope"></i> zaffa.academy@mail.ru</p>
+                <p><i class="fas fa-map-marker-alt"></i> г. Ташкент, рядом с новым мостом, напротив "ТЕХНО СИТИ" здание "ZAFFA EDU"</p>
+                <p><i class="fas fa-clock"></i> 08:30 - 20:30</p>
+            </div>
+        </div>
+        </div>
+
+        <section class="karta">
+            <div class="karta__content">
+                <h2>Найди нас на картах Google</h2>
+                <span><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.910374890345!2d69.05292937513606!3d41.11464841286967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae7b816d3f999b%3A0x2a7955e62e0d4137!2sZAFFA%20ACADEMY!5e0!3m2!1sru!2s!4v1721113894486!5m2!1sru!2s" width="600" height="450" style="border:0; " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></span>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <img src="../img/Mask group (2).png" alt="ZAFFA Academy">
+                <div class="socials">
+                    <a target="_blank" href="https://www.youtube.com/@ZAFFA_ACADEMY"><i class="fab fa-youtube"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/zaffa.academy/"><i class="fab fa-instagram"></i></a>
+                    <a target="_blank" href="https://t.me/ZAFFA_ACADEMY"><i class="fab fa-telegram"></i></a>
+                </div>
+                <p>@zaffaacademy.uz</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Sitemap</h3>
+                <ul>
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="onas.html">О нас</a></li>
+                    <li><a href="kursi.html">Курсы</a></li>
+                    <li><a href="conta.html">Контакты</a></li>
+                    <li><a href="tect.html">Тести</a></li>
+                    <li><a href="conta.html">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer-section links">
+                <h3>Курсы</h3>
+                <ul>
+                    <li><a href="#">Веб дизайн</a></li>
+                    <li><a href="#">Фронтенд</a></li>
+                    <li><a href="#">Бэкенд</a></li>
+                    <li><a href="#">Бухгалтерия</a></li>
+                    <li><a href="#">Компьютер</a></li>
+                    <li><a href="#">Англ язык</a></li>
+                    <li><a href="#">Русский язык</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Head Office</h3>
+                <p>Янгиюль, рядом с новым мостом, напротив "ТЕХНО СИТИ" здание "ZAFFA EDU"</p>
+                <p><i class="fas fa-phone"></i> +998 (99) 809 38 78</p>
+                <p><i class="fas fa-phone"></i> +998 (99) 800 38 78</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2020 UI Medico AI. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/tect.js"></script>
+</body>
+</html>
